@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glowen Shop - Your Shopping Companion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="glowen-shop-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">Loading Glowen Shop...</div>
+</div>
+
+<div class="announcement-bar animate__animated animate__fadeInDown">
+  <p><i class="fas fa-bolt"></i> FLASH SALE: Get 50% off on your first order! Use code: <strong>EASY50</strong></p>
+</div>
+
+<section class="hero-section">
+  <div class="left-content animate__animated animate__fadeInLeft">
+    <img src="glowen-shop-logo.png" alt="Glowen Shop Logo" class="logo"/>
+    <h1>Glowen Shop</h1>
+    <p>Your one-stop shopping destination with the best prices and fastest delivery. Quality products at your fingertips.</p>
+    <button class="cta-button">Shop Now <i class="fas fa-arrow-right"></i></button>
+  </div>
+  <div class="banner animate__animated animate__fadeInRight">
+    <img src="banner.webp" alt="Shop the latest trends" />
+  </div>
+</section>
+
+<div class="menu-container" id="menu-container">
+  <button class="menu-button" id="menu-button">
+    <i class="fas fa-bars" id="menu-icon"></i>
+  </button>
+  <div class="menu-items">
+    <div class="menu-item" onclick="scrollToSection('about')" title="About Us">
+      <i class="fas fa-info-circle"></i>
+    </div>
+    <div class="menu-item" onclick="scrollToSection('products')" title="Products">
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+    <div class="menu-item" onclick="scrollToSection('contact')" title="Contact">
+      <i class="fas fa-envelope"></i>
+    </div>
+  </div>
+</div>
+
+<div class="back-to-top" id="back-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<section id="about" class="content-section">
+  <h2 class="section-title animate__animated animate__fadeIn">About Us</h2>
+  <div class="fade-in">
+    <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem;">Welcome to Glowen Shop, your premier online shopping destination. Founded in 2023, we're committed to providing high-quality products at competitive prices with exceptional customer service. Our mission is to make shopping easy, convenient, and enjoyable for everyone.</p>
+    <div class="features-container">
+      <div class="feature-card fade-in delay-1">
+        <div class="feature-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3 class="feature-title">Fast Delivery</h3>
+        <p class="feature-description">Get your orders delivered within 24 hours in metro cities with our express shipping options.</p>
+      </div>
+      <div class="feature-card fade-in delay-2">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3 class="feature-title">Secure Payments</h3>
+        <p class="feature-description">100% secure payment options with SSL encryption and multiple payment methods available.</p>
+      </div>
+      <div class="feature-card fade-in delay-3">
+        <div class="feature-icon">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3 class="feature-title">24/7 Support</h3>
+        <p class="feature-description">Our dedicated customer care team is always ready to help you with any questions or issues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="content-section">
+  <h2 class="section-title animate__animated animate__fadeIn">Featured Products</h2>
+  <div class="products-grid">
+    <div class="product-card fade-in">
+      <div class="product-image" style="background-image: url('wireless-headphone.webp');">
+        <span class="product-badge">Sale</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Wireless Headphones Pro</h3>
+        <div class="product-price">₹4,999 <span>₹6,499</span></div>
+        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card fade-in delay-1">
+      <div class="product-image" style="background-image: url('smart-watch.webp');">
+        <span class="product-badge">New</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Smart Watch Pro</h3>
+        <div class="product-price">₹10,499 <span>₹12,499</span></div>
+        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card fade-in delay-2">
+      <div class="product-image" style="background-image: url('bluetooth-speaker.jpeg');">
+        <span class="product-badge">Best Seller</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Bluetooth Speaker</h3>
+        <div class="product-price">₹2,999</div>
+        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card fade-in delay-3">
+      <div class="product-image" style="background-image: url('fitness-tracker.jpeg');">
+        <span class="product-badge">-30%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-title">Fitness Tracker</h3>
+        <div class="product-price">₹3,499 <span>₹4,999</span></div>
+        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="content-section">
+  <h2 class="section-title animate__animated animate__fadeIn">Contact Us</h2>
+  <div class="fade-in" style="max-width: 1200px; margin: 0 auto;">
+    <div class="contact-info">
+      <div class="contact-method fade-in delay-1">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email</h3>
+        <p>contact@glowenshop.com</p>
+      </div>
+      <div class="contact-method fade-in delay-2">
+        <div class="contact-icon">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h3>Phone</h3>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="contact-method fade-in delay-3">
+        <div class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Address</h3>
+        <p>123 Glowen Street, Chennai, India</p>
+      </div>
+    </div>
+    <div class="contact-form fade-in delay-4">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="cta-button" style="width: 100%;">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <img src="glowen-shop-logo.png" alt="Glowen Shop Logo" class="footer-logo">
+      <p style="color: var(--light-gray); margin-bottom: 20px;">Making shopping easy and convenient since 2023. Quality products at your fingertips.</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3 class="footer-title">Categories</h3>
+      <ul class="footer-links">
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Home & Garden</a></li>
+        <li><a href="#">Health & Beauty</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3 class="footer-title">Customer Service</h3>
+      <ul class="footer-links">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Glowen Shop. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by Glowen Team</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
